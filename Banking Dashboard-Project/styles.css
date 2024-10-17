@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#89ABE3FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.dashboard {
+    background-color:#FCF6F5FF;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    text-align: center;
+    height: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.balance-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #195190FF;
+}
+
+.transaction-section {
+    margin-bottom: 20px;
+}
+
+
+.deposit, .withdraw {
+    margin-bottom: 20px;
+
+}
+
+label {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+}
+
+button {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #195190FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000057;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+
+
+

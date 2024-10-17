@@ -1,0 +1,270 @@
+/* Basic Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color:#C70039;
+    overflow: hidden;
+    padding: 10px 20px;
+}
+.navbar .logo {
+    float: left;
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #f4f4f4;
+}
+
+.banner img {
+   
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+.banner-text .btn {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.banner-text .btn:hover {
+    background-color: #C70039;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.categories {
+    padding: 20px;
+    text-align: center;
+    margin-top: 230px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-item {
+    width: 30%;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.category-item:hover img {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 30%;
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+}
+
+
+
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #C70039;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    animation: slideInLeft 1s ease;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1a73e8;
+}
+
+/* Booking Form Styling */
+.container {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1558b8;
+}
+
+/* Booking Summary */
+.summary {
+    margin-top: 2rem;
+    display: none;
+}
+
+.summary h2 {
+    color: #1a73e8;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+}

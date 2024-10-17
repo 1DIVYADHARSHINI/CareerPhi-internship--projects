@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Customer Self-Service Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Insurance Customer Self-Service Portal</h1>
+    </header>
+
+    <nav>
+        <button id="fileClaimBtn">File a Claim</button>
+        <button id="trackClaimsBtn">Track Claims</button>
+        <button id="chatbotBtn">Chatbot</button>
+        <button id="knowledgeBaseBtn">Search Knowledge Base</button>
+    </nav>
+
+    <section id="recentClaimsSection">
+        <h2>Recent Claims:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Claim Number</th>
+                    <th>Status</th>
+                    <th>Date Submitted</th>
+                </tr>
+            </thead>
+            <tbody id="claimsTable">
+                <tr>
+                    <td>CLM001</td>
+                    <td>In Review</td>
+                    <td>09/05/2024</td>
+                </tr>
+                <tr>
+                    <td>CLM002</td>
+                    <td>Approved</td>
+                    <td>08/25/2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="claimFormSection" class="hidden">
+        <h2>Submit a New Insurance Claim</h2>
+        <form id="claimForm">
+            <label for="policyNumber">Policy Number:</label>
+            <input type="text" id="policyNumber" required><br>
+
+            <label for="incidentDate">Incident Date:</label>
+            <input type="date" id="incidentDate" required><br>
+
+            <label for="incidentDescription">Incident Description:</label>
+            <textarea id="incidentDescription" required></textarea><br>
+
+            <label for="fileUpload">Attach Files:</label>
+            <input type="file" id="fileUpload"><br>
+
+            <button type="submit">Submit Claim</button>
+        </form>
+        <p id="successMessage" class="hidden">Claim submitted successfully!</p>
+    </section>
+
+    <section id="chatbotSection" class="hidden">
+        <h2>Chat with Us (AI-Powered Chatbot)</h2>
+        <div id="chatbox">
+            <p>User: <input type="text" id="userQuestion"></p>
+            <button id="sendQuestion">Ask Chatbot</button>
+            <p id="chatbotResponse"></p>
+        </div>
+    </section>
+
+    <section id="knowledgeBaseSection" class="hidden">
+        <h2>Search Knowledge Base</h2>
+        <input type="text" id="searchQuery" placeholder="Search...">
+        <ul id="searchResults"></ul>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

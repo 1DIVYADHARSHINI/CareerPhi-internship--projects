@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Concert Booking</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="container">
+        <h1>Coldplay Concert Booking</h1>
+
+        <form id="booking-form">
+            <label for="concert">Select a Concert Date and Venue:</label>
+            <select id="concert" required>
+                <option value="">-- Select a Concert --</option>
+                <option value="October 15, 2024 - London">October 15, 2024 - London</option>
+                <option value="November 10, 2024 - New York">November 10, 2024 - New York</option>
+                <option value="December 5, 2024 - Sydney">December 5, 2024 - Sydney</option>
+            </select>
+
+            <label for="ticketType">Select Ticket Type:</label>
+            <select id="ticketType" required>
+                <option value="">-- Select Ticket Type --</option>
+                <option value="General Admission">General Admission ($80)</option>
+                <option value="VIP">VIP ($150)</option>
+            </select>
+
+            <label for="ticketQuantity">Select Ticket Quantity:</label>
+            <input type="number" id="ticketQuantity" min="1" max="10" placeholder="Enter quantity" required>
+
+            <button type="button" id="confirmBooking">Confirm Booking</button>
+        </form>
+
+        <div id="error-message"></div>
+
+        <div class="summary" id="bookingSummary">
+            <h2>Booking Summary</h2>
+            <p>Concert: <span id="summaryConcert"></span></p>
+            <p>Ticket Type: <span id="summaryTicketType"></span></p>
+            <p>Quantity: <span id="summaryQuantity"></span></p>
+            <p>Total Price: <span id="summaryPrice"></span></p>
+
+            <button type="button" id="confirm">Confirm</button>
+            <button type="button" id="editBooking">Edit Booking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Light gray background for contrast */
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 20px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin-right: 10px;
+    width: 30%;
+    border: 1px solid #ced4da; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus, select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.job-list {
+    margin-top: 20px;
+}
+
+.job-item {
+    background-color: #f8f9fa; /* Light background for job items */
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.job-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.job-item h3 {
+    margin: 0;
+    color: #333; /* Dark text for job titles */
+}
+
+.job-item .location {
+    font-style: italic;
+    color: #6c757d; /* Gray color for location */
+}
+
+.favorites-list {
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.favorites-list h2 {
+    margin-top: 0;
+    color: #007bff; /* Primary color for headers */
+}
+
+/* Add an image for job items */
+.job-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .search-filter {
+        flex-direction: column; /* Stack on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    input, select {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 10px; /* Margin between inputs */
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Board</h1>
+
+        <!-- Search and Filter Section -->
+        <div class="search-filter">
+            <input type="text" id="keyword" placeholder="Search jobs by keyword">
+            <select id="jobType">
+                <option value="">All Job Types</option>
+                <option value="Full-time">Full-time</option>
+                <option value="Part-time">Part-time</option>
+            </select>
+            <select id="location">
+                <option value="">All Locations</option>
+                <option value="New York">New York</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Los Angeles">Los Angeles</option>
+            </select>
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <!-- Job List Section -->
+        <div id="jobList" class="job-list">
+            <!-- Jobs will be populated here by JavaScript -->
+        </div>
+
+        <!-- Favorite Jobs Section -->
+        <div id="favoritesList" class="favorites-list">
+            <h2>Saved Jobs</h2>
+            <!-- Favorite jobs will be populated here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

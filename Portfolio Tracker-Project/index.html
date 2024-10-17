@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Portfolio Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Investment Portfolio Tracker</h1>
+    <h2>Total Portfolio Value: $<span id="totalValue">0</span></h2>
+
+    <!-- Add Investment Form -->
+    <div id="addInvestmentForm">
+      <h3>Add New Investment</h3>
+      <form id="investmentForm">
+        <input type="text" id="assetName" placeholder="Asset Name" required>
+        <input type="number" id="investedAmount" placeholder="Amount Invested" required>
+        <input type="number" id="currentValue" placeholder="Current Value" required>
+        <button type="submit">Add Investment</button>
+      </form>
+    </div>
+
+    <!-- Investment List -->
+    <h3>Investment List</h3>
+    <ul id="investmentList"></ul>
+
+    <!-- Pie Chart --
+    <canvas id="portfolioChart"></canvas-->
+    <canvas id="portfolioChart" width="400" height="400"></canvas>
+
+  </div>
+</body>
+</html>

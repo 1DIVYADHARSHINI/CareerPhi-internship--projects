@@ -1,0 +1,164 @@
+/* Google Font for Unique Style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #004d40;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #e0f2f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+form input:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  background-color: #00796b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Investment List Styling */
+#investmentList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.investment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fafafa;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.investment-item:hover {
+  background-color: #e0f7fa;
+}
+
+.investment-item div {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.investment-item button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.investment-item button.update {
+  background-color: #29b6f6;
+  color: #fff;
+}
+
+.investment-item button.update:hover {
+  background-color: #0288d1;
+}
+
+.investment-item button.remove {
+  background-color: #e57373;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.investment-item button.remove:hover {
+  background-color: #d32f2f;
+}
+
+/* Total Value Styling */
+#totalValue {
+  font-size: 1.8rem;
+  color: #00796b;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #e0f2f1;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Pie Chart Styling */
+canvas {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border-radius: 12px;
+}
+
+/* Add hover and transition effects */
+.investment-item div, form input {
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.investment-item:hover div, form input:focus {
+  color: #00796b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
